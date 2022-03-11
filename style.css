@@ -1,5 +1,5 @@
 :root {
-    --cor-detalhe-escura: #17968b;
+    --cor-detalhe-escura: #0c413c;
     --cor-detalhe-media: #18c4bb;
     --cor-detalhe-clara: #189676;
 
@@ -12,7 +12,7 @@
 
 body {
     background-color: var(--cor-neutra-clara);
-    color: var(--cor-neutra-escura);
+    color: var(--cor-neutra-media);
     font-size: 16px;
     margin: 0;
     box-sizing: border-box;
@@ -45,7 +45,7 @@ nav ul {
 
 .navlink {
     text-decoration: none;
-    color: var(--cor-neutra-media);
+    color: var(--cor-neutra-escura);
     border-bottom: 3px solid var(--cor-detalhe-clara);
     padding-bottom: 0.4rem;
     transition: 0.5s
@@ -55,6 +55,41 @@ nav ul {
     background-color: var(--cor-neutra-clara);
     color:var(--cor-links);
     border-bottom: 3px solid var(--cor-links);
+}
+
+ .area-titulo{
+background-color: var(--cor-neutra-escura);
+padding: 1rem;
+ }
+
+ .titulo-1 {
+     color:var(--cor-neutra-clara);
+ }
+
+ .titulo-2{
+     color: var(--cor-detalhe-media);
+ }
+
+.conteudo{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius:10px;
+    border: 1px solid var(--cor-detalhe-media);
+    margin:1rem;
+    ;
+}
+
+.rodape{
+    background-color: var(--cor-detalhe-media);
+    color:var(--cor-neutra-clara);
+    height:100px;
+    display: flex;
+    align-items: center;
+}
+
+.texto-rodape{
+    font-size: 1.125rem;
+    padding: 1rem;
 }
 
 
