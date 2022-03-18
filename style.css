@@ -76,7 +76,35 @@ padding: 1rem;
     border-radius:10px;
     border: 1px solid var(--cor-detalhe-media);
     margin:1rem;
-    ;
+    clear: both;
+    min-height: 395px;
+}
+.foto{
+    width: 480px;
+    height: 270px;
+    float: left;
+    margin: 0 15px 15px 0;
+    
+}
+
+figcaption {
+    font-size: 0.75rem;
+    font-style: italic;
+    float: left;
+    clear: both;
+    width: 480px;
+}
+
+.varias{
+    width: 160px;
+    height: 270px;
+    float: left;
+    margin:0;
+}
+
+figure{
+    float: left;
+    margin: 0 15px 5px 0;
 }
 
 .rodape{
