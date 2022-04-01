@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabalhando com imagens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="titulonav">Curso de HTML/CSS</a>
+            <ul class="navlist">
+                <li><a href="index.html"class= "navlink">Início</a></li>
+                <li><a href="imagem.html"class= "navlink">Imagens</a></li>
+                <li><a href="audio.html"class= "navlink">Áudio</a></li>
+                <li><a href="video.html"class= "navlink">Vídeo</a></li>
+                <li><a href="mapas.html"class= "navlink">Mapas</a></li>
+                <li><a href="tabela.html"class= "navlink">Tabela</a></li>
+                <li><a href="formulario.html"class= "navlink">Formulário</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <header class="area-titulo">
+                <h1 class="titulo-1"> trabalhando com formularios</h1>
+            </header>
+            <article class="conteudo">
+                <h2 class="titulo-2">utilizando diferentes tipos de caixa de dados</h2>
+                <form action="javascript:alert( 'formulario enviado');" name="frmcadastro" methop="post">
+                    <div class="conteudo-formulario">
+                    <label for="txtnome">nome: </label>
+                    <input type="text" name="nome" id="txtnome" maxlength="50" required autofocus>   
+                    <label for="txttelefone"></label>
+                    <input type="tel" name="telefone" id="txttelefone" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$" plasceholder="exemplo (00) 00000-0000" required>
+                    <label for="txtemail">E-mail</label>
+                    <input type="email" name="email" id="txtemail" maxlength="40" required>
+                    <label for="txtsenha">senha: </label>
+                    <input type="password" name="senha" id="txtsenha" minlength="6" maxlength="12"> required
+                    <label for="txtdata">data de nascimento</label>
+                    <input type="date" name="datanascimento" id="txtdata">
+                    <label for="txthora">hora marcaada: </label>
+                    <input type="time" name="horamarcada" id="txthora">
+                    <label for="txtidade">idade: </label>
+                    <input type="number" name="idade" id="txtidade"min="0" max="150" >
+
+                    <p>quais alimentos você costuma consumir?</p>
+                    <input type="checkbox" name="comida" id="chkcomida1"><label for="chkcomida1">carne</label>
+                    <input type="checkbox" name="comida" id="chkcomida2"><label for="chkcomida2">geleia</label>
+                    <input type="checkbox" name="comida" id="chkcomida3"><label for="chkcomida3">frango</label>
+                    <input type="checkbox" name="comida" id="chkcomida4"><label for="chkcomida4">verduras</label>
+                    <input type="checkbox" name="comida" id="chkcomida5"><label for="chkcomida5">legumes</label>
+                    <input type="checkbox" name="comida" id="chkcomida6"><label for="chkcomida6">cereais</label>
+                    <input type="checkbox" name="comida" id="chkcomida7"><label for="chkcomida7">fruta</label>
+
+                    <br>
+                    <p>o significado da sigla html é:</p>
+                    <input type="radio" name="alternativa" id="radalternativaA"><label for="radalternativaA">hyper text language</label>
+                    <input type="radio" name="alternativa" id="radalternativaB"><label for="radalternativaB">hyper text markup language</label>
+                    <input type="radio" name="alternativa" id="radalternativaC"><label for="radalternativaC">hyper text model layer</label>
+                    <input type="radio" name="alternativa" id="radalternativaD"><label for="radalternativaD">hyper text markup layer</label>
+                    </button type="submit"> enviar</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="texto-rodape">Página desenvolvida por casak - &copy; <script>javascript:document.write(new Date().getFullYear());</script></p>
+    </footer>
+</body>
+</html>
