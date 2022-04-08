@@ -64,7 +64,37 @@
                     <input type="radio" name="alternativa" id="radalternativaB"><label for="radalternativaB">hyper text markup language</label>
                     <input type="radio" name="alternativa" id="radalternativaC"><label for="radalternativaC">hyper text model layer</label>
                     <input type="radio" name="alternativa" id="radalternativaD"><label for="radalternativaD">hyper text markup layer</label>
-                    </button type="submit"> enviar</button>
+
+                    <label for="selregiao">qual a região que você mora?</label>
+                    <select name="regiao" id="selregiao">
+                        <option value="selecione">selecione</option>
+                        <option value="sul">sul</option>
+                        <option value="sudeste">sudeste</option>
+                        <option value="centro-oeste">centro-oeste</option>
+                        <option value="nordeste">nordeste</option>
+                        <option value="norte">norte</option>
+                    </select>
+                
+                    <label for="dtlcidades">qual regiâo você mora?</label>
+                    <input list="cidades" id="dtlcidades">
+                    <datalist id="cidades">
+                        <option value="aparecida"></option>
+                        <option value="guaratingueta"></option>
+                        <option value="jacarei"></option>
+                        <option value="lorena"></option>
+                        <option value="pindamonhangaba"></option>
+                        <option value="sao jose dos campos"></option>
+                        <option value="taubate"></option>
+                    </datalist>
+                  
+                    <label for="txamensagem">escreva sua mensagem</label>
+                    <textarea name="mensagem" id="txtmensagem" cols="50" rows="5" maxlength="1024"></textarea>
+
+                    <br>
+
+                    <button type="submit"> enviar</button>
+                    <button type="reset">limpar</button>
+
                     </div>
                 </form>
             </article>
