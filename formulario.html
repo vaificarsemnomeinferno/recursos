@@ -35,38 +35,43 @@
                 <form action="javascript:alert( 'formulario enviado');" name="frmcadastro" methop="post">
                     <div class="conteudo-formulario">
                     <label for="txtnome">nome: </label>
-                    <input type="text" name="nome" id="txtnome" maxlength="50" required autofocus>   
+                    <input type="text" name="nome"class= "formulario-label"  id="txtnome" maxlength="50" required autofocus>   
                     <label for="txttelefone"></label>
-                    <input type="tel" name="telefone" id="txttelefone" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$" plasceholder="exemplo (00) 00000-0000" required>
+                    <input type="tel" name="telefone" class= "formulario-label" id="txttelefone" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$" plasceholder="exemplo (00) 00000-0000" required>
                     <label for="txtemail">E-mail</label>
-                    <input type="email" name="email" id="txtemail" maxlength="40" required>
+                    <input type="email" name="email" class= "formulario-label" id="txtemail" maxlength="40" required>
                     <label for="txtsenha">senha: </label>
-                    <input type="password" name="senha" id="txtsenha" minlength="6" maxlength="12"> required
+                    <input type="password" name="senha"  class= "formulario-label" id="txtsenha" minlength="6" maxlength="12"> required
                     <label for="txtdata">data de nascimento</label>
-                    <input type="date" name="datanascimento" id="txtdata">
+                    <input type="date" name="datanascimento" class= "formulario-label" id="txtdata">
                     <label for="txthora">hora marcaada: </label>
-                    <input type="time" name="horamarcada" id="txthora">
+                    <input type="time" name="horamarcada" class="formulario-caixa" id="txthora">
                     <label for="txtidade">idade: </label>
-                    <input type="number" name="idade" id="txtidade"min="0" max="150" >
+                    <input type="number" name="idade" class="formulario-caixa" id="txtidade"min="0" max="150" >
 
-                    <p>quais alimentos você costuma consumir?</p>
-                    <input type="checkbox" name="comida" id="chkcomida1"><label for="chkcomida1">carne</label>
-                    <input type="checkbox" name="comida" id="chkcomida2"><label for="chkcomida2">geleia</label>
-                    <input type="checkbox" name="comida" id="chkcomida3"><label for="chkcomida3">frango</label>
-                    <input type="checkbox" name="comida" id="chkcomida4"><label for="chkcomida4">verduras</label>
-                    <input type="checkbox" name="comida" id="chkcomida5"><label for="chkcomida5">legumes</label>
-                    <input type="checkbox" name="comida" id="chkcomida6"><label for="chkcomida6">cereais</label>
-                    <input type="checkbox" name="comida" id="chkcomida7"><label for="chkcomida7">fruta</label>
+                    <fieldset class="formulario-grupo">
+                        <p>quais alimentos você costuma consumir?</p>
+                        <input type="checkbox" name="comida" id="chkcomida1"><label for="chkcomida1">carne</label>
+                        <input type="checkbox" name="comida" id="chkcomida2"><label for="chkcomida2">geleia</label>
+                        <input type="checkbox" name="comida" id="chkcomida3"><label for="chkcomida3">frango</label>
+                        <input type="checkbox" name="comida" id="chkcomida4"><label for="chkcomida4">verduras</label>
+                        <input type="checkbox" name="comida" id="chkcomida5"><label for="chkcomida5">legumes</label>
+                        <input type="checkbox" name="comida" id="chkcomida6"><label for="chkcomida6">cereais</label>
+                        <input type="checkbox" name="comida" id="chkcomida7"><label for="chkcomida7">fruta</label>
+                    </fieldset>
 
-                    <br>
-                    <p>o significado da sigla html é:</p>
-                    <input type="radio" name="alternativa" id="radalternativaA"><label for="radalternativaA">hyper text language</label>
-                    <input type="radio" name="alternativa" id="radalternativaB"><label for="radalternativaB">hyper text markup language</label>
-                    <input type="radio" name="alternativa" id="radalternativaC"><label for="radalternativaC">hyper text model layer</label>
-                    <input type="radio" name="alternativa" id="radalternativaD"><label for="radalternativaD">hyper text markup layer</label>
+                    <fieldset class="formulario-grupo">
+                        <br>
+                        <p>o significado da sigla html é:</p>
+                        <input type="radio" name="alternativa" id="radalternativaA"><label for="radalternativaA">hyper text language</label>
+                        <input type="radio" name="alternativa" id="radalternativaB"><label for="radalternativaB">hyper text markup language</label>
+                        <input type="radio" name="alternativa" id="radalternativaC"><label for="radalternativaC">hyper text model layer</label>
+                        <input type="radio" name="alternativa" id="radalternativaD"><label for="radalternativaD">hyper text markup layer</label>
+                    </fieldset>
 
-                    <label for="selregiao">qual a região que você mora?</label>
-                    <select name="regiao" id="selregiao">
+
+                    <label for="selregiao" class="formulario-label">qual a região que você mora?</label>
+                    <select name="regiao" id="selregiao" class="formulario-caixa">
                         <option value="selecione">selecione</option>
                         <option value="sul">sul</option>
                         <option value="sudeste">sudeste</option>
@@ -75,8 +80,8 @@
                         <option value="norte">norte</option>
                     </select>
                 
-                    <label for="dtlcidades">qual regiâo você mora?</label>
-                    <input list="cidades" id="dtlcidades">
+                    <label for="dtlcidades" class="formulario-label">qual regiâo você mora?</label>
+                    <input list="cidades" id="dtlcidades" class="formulario-caixa">
                     <datalist id="cidades">
                         <option value="aparecida"></option>
                         <option value="guaratingueta"></option>
@@ -87,14 +92,15 @@
                         <option value="taubate"></option>
                     </datalist>
                   
-                    <label for="txamensagem">escreva sua mensagem</label>
-                    <textarea name="mensagem" id="txtmensagem" cols="50" rows="5" maxlength="1024"></textarea>
+                    <label for="txamensagem"  class="formulario-label">escreva sua mensagem</label>
+                    <textarea name="mensagem" id="txtmensagem" cols="50" rows="5" maxlength="1024" class="formulario-caixa"></textarea>
 
-                    <br>
-
+                    <div class="formulario area- botos">
                     <button type="submit"> enviar</button>
-                    <button type="reset">limpar</button>
+                    <button type="reset">limpar"formulario-caixa" </button>
+                    </div>
 
+                    
                     </div>
                 </form>
             </article>

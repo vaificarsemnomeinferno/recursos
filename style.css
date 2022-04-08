@@ -115,6 +115,98 @@ figure{
     align-items: center;
 }
 
+.video {
+    width: 480px;
+    height: 270px;
+    float: left;
+    margin: 0 15px 5px 0;
+}
+
+.mapa {
+    width: 50%;
+}
+
+table {
+    width: 80%;
+    background-color: var(--cor-neutra-clara);
+    border: 1px solid var(--cor-neutra-media);
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid var(--cor-neutra-media);
+    background-color: var(--cor-detalhe-escura);
+    color: var(--cor-neutra-clara);
+    padding: 5px;
+}
+
+tr {
+    border: 1px solid var(--cor-neutra-media);
+}
+
+td {
+    border: 1px dashed var(--cor-neutra-media);
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #D3D3D3;
+}
+
+tr:hover {
+    background-color: var(--cor-links);
+    color: var(--cor-neutra-clara);
+}
+
+.conteudo-formulario {
+    display: grid;
+    grid-template-columns: 2;
+    gap: 0.5rem;
+    width: 70%;
+    margin: 0 auto;
+
+
+}
+
+.formulario-label {
+    grid-column: 2;
+    justify-self: flex-end;
+}
+
+.formulario-caixa {
+    grid-column: 2;
+    padding: 0,5rem;
+    outline: none;
+}
+
+.formulario-caixa:focus{
+    border: 1px solid var(--cor-detalhe-escura);
+}
+
+.formulario-grupo {
+    grid-column: span 2;
+    border: none;
+    padding: 0;
+}
+
+.formulario-area-botoes {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    grid-column: span 2;
+}
+
+.formulario-area-botoes button{
+    padding: 00.75rem;
+    font-size: 1,125rem;
+    background-color: #189676;
+    color: #0c413c;
+    border: 2px solid var(--cor-detalhe-clara);
+    border-radius: 0.25rem;
+
+}
+
 .texto-rodape{
     font-size: 1.125rem;
     padding: 1rem;
